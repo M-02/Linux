@@ -14,4 +14,4 @@ certutil -A -n "GeoTrust SSL CA" -t "C,," -d ~/.certs -i ~/.certs/163.crt
 certutil -A -n "GeoTrust Global CA" -t "C,," -d ~/.certs -i ~/.certs/163.crt
 cd /root/.certs/
 certutil -A -n "GeoTrust SSL CA - G3" -t "Pu,Pu,Pu" -d ./ -i 163.crt
-echo "hello" | mail -v -s "this is Test Mail" ################    #你想要发送测试邮件的电子邮箱地址
+echo "hello" | mail -v -s "this is Test Mail" ################    #你想要发送测试邮件的电子邮箱地址。
