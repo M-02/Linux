@@ -17,5 +17,6 @@ certutil -A -n "GeoTrust Global CA" -t "C,," -d ~/.certs -i ~/.certs/163.crt
 cd /root/.certs/
 certutil -A -n "GeoTrust SSL CA - G3" -t "Pu,Pu,Pu" -d ./ -i 163.crt
 read -p "输入你想发送的收件人:" m2
+read -p "输入你想发送的信息标题:" tl
 read -p "输入你想发送的信息:" ms
-echo $ms | mail -v -s "this is Test Mail" $m2
+echo $tl | mail -v -s $ms $m2
