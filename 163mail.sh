@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+#cent OS自动配置163邮箱并发送测试邮件
 read -p "输入你的邮件地址:" m1
 read -p "输入你的邮件密码:" password
 yum install -y mailx
